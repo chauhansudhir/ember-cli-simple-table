@@ -1,0 +1,1 @@
+export { default } from 'ember-cli-table/components/cli-table';
