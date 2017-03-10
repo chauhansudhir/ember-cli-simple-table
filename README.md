@@ -1,5 +1,9 @@
 # ember-cli-table
 
+Check test/dummy app dashboard route
+```
+{{cli-table columns=columns rows=tableData}}
+```
 This README outlines the details of collaborating on this Ember addon.
 
 ## Installation
