@@ -1,1 +1,1 @@
-export { default } from 'ember-cli-table/components/cli-table';
+export { default } from 'ember-cli-simple-table/components/cli-table';

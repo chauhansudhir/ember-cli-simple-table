@@ -5,7 +5,8 @@ const {
   get,
   set,
   computed,
-  isEqual
+  isEqual,
+  String
 } = Ember;
 
 const SORT_ORDER_ASC = 'asc';
@@ -13,14 +14,12 @@ const SORT_ORDER_DESC = 'desc';
 
 export default Ember.Component.extend({
   layout,
-  columns: null,
+  table: null,
   rows: null,
-  multipleColumnSort: false,
-  columnClickAction: null,
-  expandedRowFlagKey: '__table_meta_expanded',
-  sortedColumns: computed.filterBy('columns', 'sorted', true).readOnly(),
-  sortableColumns: computed.filterBy('columns', 'sortable', true).readOnly(),
-
+  expandedRowTemplate: null,
+  containerStyle: computed('table.hasSubColumns', function() {
+    return this.get('table.hasSubColumns') ? String.htmlSafe('fixed-table-container grouped-container') : String.htmlSafe('fixed-table-container');
+  }),
   actions: {
     columnClick(column) {
       if (isEqual(get(column, 'sortable'), false)) {
