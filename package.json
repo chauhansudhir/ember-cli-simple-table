@@ -1,8 +1,8 @@
 {
   "name": "ember-cli-simple-table",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Simple data table to try",
-  "homepage": "https://github.com/sudhirc/ember-simple-table",
+  "homepage": "https://chauhansudhir.github.io/ember-cli-simple-table/",
   "keywords": [
     "ember-addon"
   ],
