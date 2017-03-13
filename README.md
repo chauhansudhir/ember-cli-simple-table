@@ -2,6 +2,8 @@
 
 Check test/dummy app dashboard route
 ```
+import Table from 'ember-cli-simple-table';
+
 myroute.js
 
 columns: [
