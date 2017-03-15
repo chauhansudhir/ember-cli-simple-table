@@ -22,11 +22,11 @@ define('dummy/app', ['exports', 'ember', 'dummy/resolver', 'ember-load-initializ
 
   exports['default'] = App;
 });
-define('dummy/components/cli-table', ['exports', 'ember-cli-simple-table/components/cli-table'], function (exports, _emberCliSimpleTableComponentsCliTable) {
+define('dummy/components/ember-cli-simple-table', ['exports', 'ember-cli-simple-table/components/ember-cli-simple-table'], function (exports, _emberCliSimpleTableComponentsEmberCliSimpleTable) {
   Object.defineProperty(exports, 'default', {
     enumerable: true,
     get: function get() {
-      return _emberCliSimpleTableComponentsCliTable['default'];
+      return _emberCliSimpleTableComponentsEmberCliSimpleTable['default'];
     }
   });
 });
@@ -44,11 +44,11 @@ define('dummy/ember-cli-simple-table/tests/modules/ember-cli-simple-table/classe
     assert.ok(true, 'modules/ember-cli-simple-table/classes/Table.js should pass jshint.');
   });
 });
-define('dummy/ember-cli-simple-table/tests/modules/ember-cli-simple-table/components/cli-table.jshint.lint-test', ['exports'], function (exports) {
-  QUnit.module('JSHint | modules/ember-cli-simple-table/components/cli-table.js');
+define('dummy/ember-cli-simple-table/tests/modules/ember-cli-simple-table/components/ember-cli-simple-table.jshint.lint-test', ['exports'], function (exports) {
+  QUnit.module('JSHint | modules/ember-cli-simple-table/components/ember-cli-simple-table.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(false, 'modules/ember-cli-simple-table/components/cli-table.js should pass jshint.\nmodules/ember-cli-simple-table/components/cli-table.js: line 9, col 3, Redefinition of \'String\'.\n\n1 error');
+    assert.ok(true, 'modules/ember-cli-simple-table/components/ember-cli-simple-table.js should pass jshint.');
   });
 });
 define('dummy/ember-cli-simple-table/tests/modules/ember-cli-simple-table/index.jshint.lint-test', ['exports'], function (exports) {
@@ -341,7 +341,7 @@ define('dummy/services/ajax', ['exports', 'ember-ajax/services/ajax'], function 
   });
 });
 define("dummy/templates/application", ["exports"], function (exports) {
-  exports["default"] = Ember.HTMLBars.template({ "id": "VcPHqPz4", "block": "{\"statements\":[[\"text\",\"\\nSetting up \"],[\"append\",[\"unknown\",[\"tableData\",\"length\"]],false],[\"text\",\" Rows after 2 seconds\\n\"],[\"append\",[\"helper\",[\"cli-table\"],null,[[\"table\",\"rows\"],[[\"get\",[\"table\"]],[\"get\",[\"tableData\"]]]]],false],[\"text\",\"\\n\"],[\"open-element\",\"br\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\"],[\"append\",[\"unknown\",[\"model\",\"length\"]],false],[\"text\",\" Rows\\n\"],[\"append\",[\"helper\",[\"cli-table\"],null,[[\"table\",\"rows\"],[[\"get\",[\"table1\"]],[\"get\",[\"model\"]]]]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "dummy/templates/application.hbs" } });
+  exports["default"] = Ember.HTMLBars.template({ "id": "/p4Yy/gE", "block": "{\"statements\":[[\"open-element\",\"nav\",[]],[\"static-attr\",\"class\",\"navbar navbar-default\"],[\"flush-element\"],[\"text\",\"\\n  \"],[\"open-element\",\"div\",[]],[\"static-attr\",\"class\",\"container-fluid\"],[\"flush-element\"],[\"text\",\"\\n    \"],[\"comment\",\" Brand and toggle get grouped for better mobile display \"],[\"text\",\"\\n    \"],[\"open-element\",\"div\",[]],[\"static-attr\",\"class\",\"navbar-header\"],[\"flush-element\"],[\"text\",\"\\n      \"],[\"open-element\",\"button\",[]],[\"static-attr\",\"type\",\"button\"],[\"static-attr\",\"class\",\"navbar-toggle collapsed\"],[\"static-attr\",\"data-toggle\",\"collapse\"],[\"static-attr\",\"data-target\",\"#bs-example-navbar-collapse-1\"],[\"static-attr\",\"aria-expanded\",\"false\"],[\"flush-element\"],[\"text\",\"\\n        \"],[\"open-element\",\"span\",[]],[\"static-attr\",\"class\",\"sr-only\"],[\"flush-element\"],[\"text\",\"Toggle navigation\"],[\"close-element\"],[\"text\",\"\\n        \"],[\"open-element\",\"span\",[]],[\"static-attr\",\"class\",\"icon-bar\"],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n        \"],[\"open-element\",\"span\",[]],[\"static-attr\",\"class\",\"icon-bar\"],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n        \"],[\"open-element\",\"span\",[]],[\"static-attr\",\"class\",\"icon-bar\"],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n      \"],[\"close-element\"],[\"text\",\"\\n\"],[\"block\",[\"link-to\"],[\"index\"],[[\"class\"],[\"navbar-brand\"]],0],[\"text\",\"    \"],[\"close-element\"],[\"text\",\"\\n\\n    \"],[\"comment\",\" Collect the nav links, forms, and other content for toggling \"],[\"text\",\"\\n    \"],[\"open-element\",\"div\",[]],[\"static-attr\",\"class\",\"collapse navbar-collapse\"],[\"static-attr\",\"id\",\"bs-example-navbar-collapse-1\"],[\"flush-element\"],[\"text\",\"\\n      \"],[\"open-element\",\"ul\",[]],[\"static-attr\",\"class\",\"nav navbar-nav navbar-right\"],[\"flush-element\"],[\"text\",\"\\n        \"],[\"open-element\",\"li\",[]],[\"flush-element\"],[\"open-element\",\"a\",[]],[\"static-attr\",\"href\",\"/docs\"],[\"flush-element\"],[\"text\",\"Documentation\"],[\"close-element\"],[\"close-element\"],[\"text\",\"\\n      \"],[\"close-element\"],[\"text\",\"\\n    \"],[\"close-element\"],[\"comment\",\" /.navbar-collapse \"],[\"text\",\"\\n  \"],[\"close-element\"],[\"comment\",\" /.container-fluid \"],[\"text\",\"\\n\"],[\"close-element\"],[\"text\",\"\\n\"],[\"comment\",\"\\n{{outlet}} \"],[\"text\",\"\\n\"],[\"open-element\",\"br\",[]],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n\"],[\"open-element\",\"div\",[]],[\"static-attr\",\"class\",\"panel panel-default\"],[\"flush-element\"],[\"text\",\"\\n  \"],[\"open-element\",\"div\",[]],[\"static-attr\",\"role\",\"tab\"],[\"static-attr\",\"class\",\"panel-heading\"],[\"flush-element\"],[\"text\",\"\\n      \"],[\"open-element\",\"a\",[]],[\"static-attr\",\"role\",\"button\"],[\"static-attr\",\"data-toggle\",\"collapse\"],[\"flush-element\"],[\"text\",\"\\n        \"],[\"open-element\",\"h4\",[]],[\"static-attr\",\"class\",\"panel-title\"],[\"flush-element\"],[\"text\",\"Table Example: Loading 100 rows\"],[\"close-element\"],[\"text\",\"\\n      \"],[\"close-element\"],[\"text\",\"\\n  \"],[\"close-element\"],[\"text\",\"\\n  \"],[\"open-element\",\"div\",[]],[\"static-attr\",\"class\",\"panel-body table-container\"],[\"flush-element\"],[\"text\",\"\\n    \"],[\"append\",[\"unknown\",[\"model\",\"length\"]],false],[\"text\",\" Rows\\n    \"],[\"append\",[\"helper\",[\"ember-cli-simple-table\"],null,[[\"table\",\"rows\"],[[\"get\",[\"table1\"]],[\"get\",[\"model\"]]]]],false],[\"text\",\"\\n  \"],[\"close-element\"],[\"text\",\"\\n\"],[\"close-element\"],[\"text\",\"\\n\\n\"],[\"open-element\",\"div\",[]],[\"static-attr\",\"class\",\"panel panel-default\"],[\"flush-element\"],[\"text\",\"\\n  \"],[\"open-element\",\"div\",[]],[\"static-attr\",\"role\",\"tab\"],[\"static-attr\",\"class\",\"panel-heading\"],[\"flush-element\"],[\"text\",\"\\n      \"],[\"open-element\",\"a\",[]],[\"static-attr\",\"role\",\"button\"],[\"static-attr\",\"data-toggle\",\"collapse\"],[\"flush-element\"],[\"text\",\"\\n        \"],[\"open-element\",\"h4\",[]],[\"static-attr\",\"class\",\"panel-title\"],[\"flush-element\"],[\"text\",\"Table Example: Loading 2000 rows after 2 seconds\"],[\"close-element\"],[\"text\",\"\\n      \"],[\"close-element\"],[\"text\",\"\\n  \"],[\"close-element\"],[\"text\",\"\\n  \"],[\"open-element\",\"div\",[]],[\"static-attr\",\"class\",\"panel-body table-container\"],[\"flush-element\"],[\"text\",\"\\n    Setting up \"],[\"append\",[\"unknown\",[\"tableData\",\"length\"]],false],[\"text\",\" Rows after 2 seconds\\n    \"],[\"append\",[\"helper\",[\"ember-cli-simple-table\"],null,[[\"table\",\"rows\"],[[\"get\",[\"table\"]],[\"get\",[\"tableData\"]]]]],false],[\"text\",\"\\n  \"],[\"close-element\"],[\"text\",\"\\n\"],[\"close-element\"],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[{\"statements\":[[\"text\",\"        \"],[\"open-element\",\"img\",[]],[\"static-attr\",\"src\",\"images/ember-logo.png\"],[\"static-attr\",\"alt\",\"\"],[\"flush-element\"],[\"close-element\"],[\"text\",\"\\n        \"],[\"open-element\",\"span\",[]],[\"flush-element\"],[\"text\",\"Table Example\"],[\"close-element\"],[\"text\",\"\\n\"]],\"locals\":[]}],\"hasPartials\":false}", "meta": { "moduleName": "dummy/templates/application.hbs" } });
 });
 /* jshint ignore:start */
 
@@ -379,7 +379,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("dummy/app")["default"].create({"name":"ember-cli-simple-table","version":"0.0.2+23e0056c"});
+  require("dummy/app")["default"].create({"name":"ember-cli-simple-table","version":"0.0.6+04d93fb8"});
 }
 
 /* jshint ignore:end */
