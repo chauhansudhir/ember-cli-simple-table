@@ -4,7 +4,7 @@
   "version": "0.0.6",
   "url": "https://github.com/chauhansudhir/ember-cli-simple-table",
   "options": {
-    "enabledEnvironments": ["production"],
+    "enabledEnvironments": ["development", "production"],
     "paths": [
       "addon"
     ],
