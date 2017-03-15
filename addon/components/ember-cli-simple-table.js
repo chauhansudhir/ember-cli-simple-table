@@ -1,12 +1,12 @@
 import Ember from 'ember';
-import layout from '../templates/components/cli-table';
+import layout from '../templates/components/ember-cli-simple-table';
 
 const {
   get,
   set,
   computed,
   isEqual,
-  String
+  String:{htmlSafe}
 } = Ember;
 
 const SORT_ORDER_ASC = 'asc';
@@ -18,7 +18,7 @@ export default Ember.Component.extend({
   rows: null,
   expandedRowTemplate: null,
   containerStyle: computed('table.hasSubColumns', function() {
-    return this.get('table.hasSubColumns') ? String.htmlSafe('fixed-table-container grouped-container') : String.htmlSafe('fixed-table-container');
+    return this.get('table.hasSubColumns') ? htmlSafe('fixed-table-container grouped-container') : htmlSafe('fixed-table-container');
   }),
   actions: {
     columnClick(column) {
